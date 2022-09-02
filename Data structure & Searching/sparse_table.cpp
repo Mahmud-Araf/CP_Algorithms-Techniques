@@ -1,6 +1,6 @@
 //implementation of sparse table
 
-/* Sparse table is a pre-calculation algorthim to complete queries in between ranges of
+/* Sparse table is a pre-calculation data structure to complete queries in between ranges of
 an array if the query function (gcd,min,max,sum) is not even inversible and there is no update in the array
 
 Time Complexity: O(nlog(n))
@@ -18,7 +18,7 @@ for(int j=1;j<=k;j++)
 {
    for(int i=0;i+(1<<j)-1<n;i++)
    {
-      a[i][j]=func(a[i][j-1],a[i+(1<<(j-1))][j-1]); //func can be either max,min,gcd,sum etc
+      a[i][j]=a[i][j-1]+a[i+(1<<(j-1))][j-1]; //function will be here, either max,min,gcd,sum etc
    }
 }
 }

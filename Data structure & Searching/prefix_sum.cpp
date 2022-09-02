@@ -1,6 +1,6 @@
 //implementation of prefix_sum
 
-/* Prefix sum is a pre-calculation algorthim to complete queries in between ranges of
+/* Prefix sum is a pre-calculation data structure to complete queries in between ranges of
 an array if the query function(sum,count,position) is inversible and there is no update in the array
 
 Time Complexity: O(n)
