@@ -8,6 +8,7 @@ n=total number of elements of array
 */
 struct // used a structure to compress the init, update and query function under segment tree
 {
+   //initializing segment tree
    void init(int node,int b,int e,int arr[],int tree[])
    {
       if(b==e)
@@ -22,6 +23,8 @@ struct // used a structure to compress the init, update and query function under
       init(right,mid+1,e,arr,tree);
       tree[node]=tree[left]+tree[right]; //function will be here
    }
+
+   //update function to update a single node in O(log(n)) times
    void update(int node,int b,int e,int i,int newvalue,int tree[])
    {
       if(i>e||i<b)
@@ -39,6 +42,8 @@ struct // used a structure to compress the init, update and query function under
       update(right,mid+1,e,i,newvalue,tree);
       tree[node]=tree[left]+tree[right]; //function will be here 
    }
+
+   //query function
    int query(int node,int b,int e,int l,int r,int tree[])
    {
       if(l>e||r<b)
