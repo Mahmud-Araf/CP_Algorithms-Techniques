@@ -4,24 +4,30 @@
 
 Time Complexity:O(nlog(log(√n)))
 */
-bool is_prime[1000001];
+#include<bits/stdc++.h>
+using namespace std;
+
+const int n=1000001;
+
+bool is_prime[n]={};
+
 void sieve(int n)
 {
-    fill(is_prime,is_prime+n+1,true);
-    is_prime[0]=is_prime[1]=false;
-    for(int i=2;i*i<=n;i++)
+    is_prime[0]=is_prime[1]=true;
+
+    for(long long int i=2;i<=n;i++)
     {
-        if(is_prime[i])
+        if(!is_prime[i])
         {
-            for(int j=i*i;j<=n;j+=i)
+            for(long long int j=i*i;j<=n;j+=i)
             {
-                is_prime[j]=false;
+                is_prime[j]=true;
             }
         }
     }
     for(int i=2;i<=n;i++)
     {
-        if(is_prime[i])
+        if(!is_prime[i])
         {
             cout<<i<<" ";
         }
