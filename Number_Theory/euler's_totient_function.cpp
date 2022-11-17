@@ -5,6 +5,8 @@
 Time Complexity: O(log(n))
 */
 
+#include<bits/stdc++.h>
+using namespace std;
 
 int phi_function(int n)
 {

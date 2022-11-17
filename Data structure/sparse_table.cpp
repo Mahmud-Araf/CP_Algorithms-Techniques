@@ -6,6 +6,10 @@ an array if the query function (gcd,min,max,sum) is not even inversible and ther
 Time Complexity: O(nlog(n))
 n=total number of elements of array
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
 struct 
 {     
       //initializing sparse_table

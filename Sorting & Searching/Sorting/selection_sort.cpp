@@ -6,6 +6,9 @@ Time Complexity: O(n^2)
 n=total number of elements of array
 */
 
+#include<bits/stdc++.h>
+using namespace std;
+
 void bubble_sort(int n,int arr[])
 {
     for(int i=0;i<n-1;i++)

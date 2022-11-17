@@ -7,6 +7,9 @@ Time Complexity: O(n)
 n=total number of elements of array
 */
 
+#include<bits/stdc++.h>
+using namespace std;
+
 void prefix_sum(int n,int i_array[],int presum_array[])
 {
     presum_array[0]=i_array[0];

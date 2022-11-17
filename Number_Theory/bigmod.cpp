@@ -5,6 +5,10 @@
 Time Complexity: O(n),
 n=size of string
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
 int bigmod(string s,int m)  //we should input the big number as string as it might be as big as 1e500
 {   int r=0;
     for(int i=0;i<s.size();i++)

@@ -4,6 +4,10 @@
 
 Time Complexity: O(√n)
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
 void divisors(set<int>s,int n) //using set so divisors are in sorted way and are unique
 {   
     int sqr=sqrt(n)+1;

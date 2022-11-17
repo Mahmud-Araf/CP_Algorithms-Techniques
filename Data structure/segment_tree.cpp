@@ -6,6 +6,10 @@ an array even if there occurs update in the array and query function is not inve
 Time Complexity: O(n)
 n=total number of elements of array
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
 struct // used a structure to compress the init, update and query function under segment tree
 {
    //initializing segment tree
