@@ -3,17 +3,18 @@
 /* Segment tree is a pre-calculation data structure to complete queries in between ranges of
 an array even if there occurs update in the array and query function is not inversible
 
-Time Complexity: O(n)
 n=total number of elements of array
 */
 
 #include<bits/stdc++.h>
 using namespace std;
 
+// tree[] should have size 4 times of arr[]
+
 struct // used a structure to compress the init, update and query function under segment tree
 {
-   //initializing segment tree
-   void init(int node,int b,int e,int arr[],int tree[])
+   //initializing segment tree in O(n) times
+   void init(int node,int b,int e,int arr[],int tree[]) 
    {
       if(b==e)
       {
